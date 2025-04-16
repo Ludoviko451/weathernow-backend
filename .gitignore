@@ -1,0 +1,8 @@
+# Ignorar la carpeta de dependencias
+node_modules/
+
+# Ignorar archivos compilados
+dist/
+
+# Ignorar archivos de lock de npm (opcional)
+package-lock.json

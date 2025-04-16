@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                        /* Configura el target de JavaScript */
+    "module": "commonjs",                      /* Usa CommonJS para los módulos */
+    "outDir": "./dist",                        /* Carpeta de salida para los archivos compilados */
+    "rootDir": "./src",                        /* Carpeta raíz de los archivos TypeScript */
+    "esModuleInterop": true,                   /* Habilita compatibilidad con módulos ES */
+    "forceConsistentCasingInFileNames": true,   /* Fuerza consistencia en el uso de mayúsculas/minúsculas */
+    "strict": true,                             /* Activa el modo estricto de TypeScript */
+    "skipLibCheck": true,                      /* Omite la comprobación de bibliotecas */
+    "declaration": true,                       /* Genera archivos .d.ts */
+    "sourceMap": true,                         /* Genera archivos de mapa de origen */
+    "removeComments": true,                    /* Elimina los comentarios en el código de salida */
+    "noEmitOnError": true                      /* No emite archivos si hay errores */
+  },
+  "include": [
+    "src/**/*.ts"                              /* Incluir todos los archivos .ts dentro de la carpeta src */
+  ],
+  "exclude": [
+    "node_modules"                             /* Excluir node_modules */
+  ]
+}
