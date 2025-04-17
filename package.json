@@ -1,16 +1,30 @@
 {
   "name": "weathernow-backend",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "start": "tsc && node dist/app.js",
     "dev": "ts-node-dev src/app.ts",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.jest.json"
+      }
+    },
+    "roots": ["<rootDir>/tests"],
+    "collectCoverage": true,
+    "coverageReporters": ["html", "text"],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,js}",
+      "!**/node_modules/**",
+      "!**/tests/**"
+    ]
+  },
   "dependencies": {
     "axios": "^1.8.4",
     "dotenv": "^16.5.0",

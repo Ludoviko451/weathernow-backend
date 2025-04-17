@@ -14,7 +14,7 @@
     "noEmitOnError": true                      /* No emite archivos si hay errores */
   },
   "include": [
-    "src/**/*.ts"                              /* Incluir todos los archivos .ts dentro de la carpeta src */
+    "src/**/*.ts"                  /* Incluir todos los archivos .ts dentro de la carpeta src */
   ],
   "exclude": [
     "node_modules"                             /* Excluir node_modules */

@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+      "outDir": "./dist",
+      "rootDir": "./",         // Muy importante: permite acceder a `tests` y `src`
+      "types": ["jest"]
+    },
+    "include": [
+      "src/**/*.ts",
+      "tests/**/*.ts"
+    ]
+  }
+  
