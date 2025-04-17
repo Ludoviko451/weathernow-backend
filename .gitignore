@@ -6,3 +6,6 @@ dist/
 
 # Ignorar archivos de lock de npm (opcional)
 package-lock.json
+
+# Ignorar archivo .env
+.env 
